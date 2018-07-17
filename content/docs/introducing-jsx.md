@@ -59,6 +59,7 @@ const user = {
 const element = (
   <h1>
     Hello, {formatName(user)}!
+    //Hello, Harper Perez!
   </h1>
 );
 
@@ -78,13 +79,15 @@ After compilation, JSX expressions become regular JavaScript function calls and 
 
 This means that you can use JSX inside of `if` statements and `for` loops, assign it to variables, accept it as arguments, and return it from functions:
 
-```js{3,5}
+```js{4,6}
+//Refer to above snippet for `user` variable and `formatName()`
 function getGreeting(user) {
   if (user) {
     return <h1>Hello, {formatName(user)}!</h1>;
   }
   return <h1>Hello, Stranger.</h1>;
 }
+//returns <h1>Hello, Harper Perez!</h1>
 ```
 
 ### Specifying Attributes with JSX
@@ -101,7 +104,12 @@ You may also use curly braces to embed a JavaScript expression in an attribute:
 const element = <img src={user.avatarUrl}></img>;
 ```
 
-Don't put quotes around curly braces when embedding a JavaScript expression in an attribute. You should either use quotes (for string values) or curly braces (for expressions), but not both in the same attribute.
+Don't put single or double quotes around curly braces when embedding a JavaScript expression in an attribute. You should either use quotes (for string values) or curly braces (for expressions), but not both in the same attribute.
+
+Here's an example of the *incorrect* use of quotes around curly braces:
+```js
+const element = <img src='{user.avatarUrl}'></img>;
+```
 
 >**Warning:**
 >
@@ -142,7 +150,7 @@ By default, React DOM [escapes](http://stackoverflow.com/questions/7381974/which
 
 ### JSX Represents Objects
 
-Babel compiles JSX down to `React.createElement()` calls.
+Babel transpiles JSX down to `React.createElement()` calls.
 
 These two examples are identical:
 
@@ -177,7 +185,7 @@ const element = {
 
 These objects are called "React elements". You can think of them as descriptions of what you want to see on the screen. React reads these objects and uses them to construct the DOM and keep it up to date.
 
-We will explore rendering React elements to the DOM in the next section.
+It's helpful to keep this object model in mind, as we will explore rendering React elements to the DOM in the next section.
 
 >**Tip:**
 >
