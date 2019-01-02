@@ -187,6 +187,14 @@ In a function, we already have `setCount` and `count` as variables so we don't n
   </button>
 ```
 
+Similiar to `this.setState()`, `setCount` also accepts an updater function:
+
+```js{1}
+  <button onClick={() => setCount((currentCount) => currentCount + 1)}>
+    Click Me
+  </button>
+```
+
 ## Recap
 
 Let's now **recap what we learned line by line** and check our understanding.
