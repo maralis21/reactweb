@@ -137,7 +137,7 @@ For a complete setup example [see this gist](https://gist.github.com/Rich-Harris
 
 Remember that you only need to do this for production builds. You shouldn't apply the `uglify` plugin or the `replace` plugin with `'production'` value in development because they will hide useful React warnings, and make the builds much slower.
 
-### webpack
+### webpack 3 and earlier
 
 >**Note:**
 >
@@ -156,6 +156,19 @@ new webpack.optimize.UglifyJsPlugin()
 You can learn more about this in [webpack documentation](https://webpack.js.org/guides/production-build/).
 
 Remember that you only need to do this for production builds. You shouldn't apply `UglifyJsPlugin` or `DefinePlugin` with `'production'` value in development because they will hide useful React warnings, and make the builds much slower.
+
+### webpack4
+
+In webpack4, instead of using `DefinePlugin`, `'production'` value can be set using `mode` option.  It also provides `UglifyJsPlugin` by default in production mode. 
+```js
+	webpack --mode=production
+```
+or
+```js
+	module.exports = {
+		mode: 'production'
+	};
+```
 
 ## Profiling Components with the Chrome Performance Tab
 
