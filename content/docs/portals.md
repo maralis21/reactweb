@@ -12,6 +12,10 @@ ReactDOM.createPortal(child, container)
 
 The first argument (`child`) is any [renderable React child](/docs/react-component.html#render), such as an element, string, or fragment. The second argument (`container`) is a DOM element.
 
+> Note:
+>
+> `createPortal` does not render imperatively when called (e.g. in a lifecycle). Rather, the element returned from `createPortal` should be included in the parent component's render method.
+
 ## Usage
 
 Normally, when you return an element from a component's render method, it's mounted into the DOM as a child of the nearest parent node:
