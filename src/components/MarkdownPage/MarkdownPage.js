@@ -18,6 +18,7 @@ import {sharedStyles} from 'theme';
 import createCanonicalUrl from 'utils/createCanonicalUrl';
 
 import type {Node} from 'types';
+import Translatable, {translate} from '../Translatable';
 
 type Props = {
   authors: Array<string>,
@@ -28,7 +29,7 @@ type Props = {
   location: Location,
   markdownRemark: Node,
   sectionList: Array<Object>, // TODO: Add better flow type once we have the Section component
-  titlePostfix: string,
+  titleTemplate?: string,
 };
 
 const getPageById = (sectionList: Array<Object>, templateFile: ?string) => {
@@ -52,7 +53,7 @@ const MarkdownPage = ({
   location,
   markdownRemark,
   sectionList,
-  titlePostfix = '',
+  titleTemplate = translate('titleTemplate', '%s - React'),
 }: Props) => {
   const hasAuthors = authors.length > 0;
   const titlePrefix = markdownRemark.frontmatter.title || '';
@@ -75,7 +76,8 @@ const MarkdownPage = ({
       <TitleAndMetaTags
         ogDescription={ogDescription}
         canonicalUrl={createCanonicalUrl(markdownRemark.fields.slug)}
-        title={`${titlePrefix}${titlePostfix}`}
+        title={titlePrefix}
+        titleTemplate={titleTemplate}
       />
       <div css={{flex: '1 0 auto'}}>
         <Container>
@@ -115,7 +117,7 @@ const MarkdownPage = ({
                       href={`https://github.com/reactjs/reactjs.org/tree/master/${
                         markdownRemark.fields.path
                       }`}>
-                      Edit this page
+                      <Translatable>Edit this page</Translatable>
                     </a>
                   </div>
                 )}

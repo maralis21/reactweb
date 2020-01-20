@@ -9,6 +9,7 @@ import Layout from 'components/Layout';
 import Container from 'components/Container';
 import Header from 'components/Header';
 import TitleAndMetaTags from 'components/TitleAndMetaTags';
+import Translatable, {translate} from 'components/Translatable';
 import React from 'react';
 import {urlRoot} from 'site-constants';
 import {media, sharedStyles} from 'theme';
@@ -47,32 +48,40 @@ const Languages = ({location}: Props) => (
     <Container>
       <div css={sharedStyles.articleLayout.container}>
         <div css={sharedStyles.articleLayout.content}>
-          <Header>Languages</Header>
+          <Header>
+            <Translatable>Languages</Translatable>
+          </Header>
           <TitleAndMetaTags
             canonicalUrl={`${urlRoot}/languages/`}
-            title="React - Languages"
+            title={translate('Languages')}
           />
 
           <div css={sharedStyles.markdown}>
             <p>
-              The React documentation is available in the following languages:
+              <Translatable>
+                The React documentation is available in the following languages:
+              </Translatable>
             </p>
 
             <LanguagesGrid languages={complete} />
 
-            <h2>In Progress</h2>
+            <h2>
+              <Translatable>In Progress</Translatable>
+            </h2>
             <LanguagesGrid languages={partial} />
 
-            <h2>Needs Contributors</h2>
+            <h2>
+              <Translatable>Needs Contributors</Translatable>
+            </h2>
             <LanguagesGrid languages={incomplete} />
 
             <p>
-              Don't see your language above?{' '}
+              <Translatable>Don't see your language above?</Translatable>{' '}
               <a
                 href="https://github.com/reactjs/reactjs.org-translation#reactjsorg-translation"
                 target="_blank"
                 rel="noopener">
-                Let us know
+                <Translatable>Let us know</Translatable>
               </a>
               .
             </p>
@@ -157,7 +166,7 @@ const Language = ({code, name, status, translatedName}) => {
           href={`https://github.com/reactjs/${prefix}reactjs.org/`}
           target="_blank"
           rel="noopener">
-          Contribute
+          <Translatable>Contribute</Translatable>
         </a>
       </div>
     </li>

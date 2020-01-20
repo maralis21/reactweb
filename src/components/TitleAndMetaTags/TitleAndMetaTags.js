@@ -8,15 +8,19 @@
 import Helmet from 'react-helmet';
 import React from 'react';
 import {urlRoot} from 'site-constants';
+import {translate} from '../Translatable';
 // $FlowFixMe This is a valid path
 import languages from '../../../content/languages.yml';
 
-const defaultDescription = 'A JavaScript library for building user interfaces';
+const defaultDescription = translate(
+  'A JavaScript library for building user interfaces',
+);
 
 type Props = {
   title: string,
   ogDescription: string,
   canonicalUrl: string,
+  titleTemplate?: string,
 };
 
 // only provide alternate links to pages in languages where 95-100% of core content has been translated
@@ -45,9 +49,19 @@ const defaultPage = canonicalUrl => {
   return canonicalUrl.replace(urlRoot, 'https://reactjs.org');
 };
 
-const TitleAndMetaTags = ({title, ogDescription, canonicalUrl}: Props) => {
+const TitleAndMetaTags = ({
+  title,
+  titleTemplate = translate('titleTemplate', '%s - React'),
+  ogDescription,
+  canonicalUrl,
+}: Props) => {
   return (
-    <Helmet title={title}>
+    <Helmet
+      title={title}
+      titleTemplate={titleTemplate}
+      defaultTitle={`React - ${translate(
+        'A JavaScript library for building user interfaces',
+      )}`}>
       <meta property="og:title" content={title} />
       <meta property="og:type" content="website" />
       {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
