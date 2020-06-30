@@ -23,7 +23,7 @@ These are some of the links that often pop up on the #reactjs IRC channel. If yo
 
 The core concepts React themselves is something very valuable that the community is exploring and pushing further. A year ago, we wouldn't have imagined something like [Bruce Hauman](http://rigsomelight.com)'s [Flappy Bird ClojureScript port](http://rigsomelight.com/2014/05/01/interactive-programming-flappy-bird-clojurescript.html), whose interactive programming has been made possible through React:
 
-<iframe width="650" height="315" src="//www.youtube-nocookie.com/embed/KZjFVdU8VLI" frameborder="0" allowfullscreen></iframe>
+https://youtu.be/KZjFVdU8VLI
 
 And don't forget [Pete Hunt](https://github.com/petehunt)'s Wolfenstein 3D rendering engine in React ([source code](https://github.com/petehunt/wolfenstein3D-react/blob/master/js/renderer.js#L183)). While it's nearly a year old, it's still a nice demo.
 
@@ -51,4 +51,4 @@ Give us a shoutout on IRC or [React Google Groups](https://groups.google.com/for
 
 ## Random Tweets {#random-tweets}
 
-<blockquote class="twitter-tweet" lang="en"><p>Spent 12 hours so far with <a href="https://twitter.com/hashtag/reactjs?src=hash">#reactjs</a>. Spent another 2 wondering why we&#39;ve been doing JS frameworks wrong until now. React makes me happy.</p>&mdash; Paul Irwin (@paulirwin) <a href="https://twitter.com/paulirwin/statuses/481263947589242882">June 24, 2014</a></blockquote>
+https://twitter.com/paulirwin/statuses/481263947589242882

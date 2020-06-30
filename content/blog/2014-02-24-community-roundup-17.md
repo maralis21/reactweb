@@ -55,12 +55,9 @@ Rafał Cieślak ([@Ravicious](https://twitter.com/Ravicious)) wrote a [React ver
 
 Emanuele shared this awesome demo video with us:
 
-<iframe width="650" height="315" src="//www.youtube-nocookie.com/embed/jYcpaemt90M" frameborder="0" allowfullscreen></iframe>
-
-
+https://youtu.be/jYcpaemt90M
 
 ## React Components {#react-components}
-
 
 ### Table Sorter {#table-sorter}
 [Table Sorter](https://bgerm.github.io/react-table-sorter-demo/) by [bgerm](https://github.com/bgerm) [[source](https://github.com/bgerm/react-table-sorter-demo)] is another helpful React component.
@@ -91,4 +88,4 @@ Similarly, Alan deLevie ([@adelevie](https://twitter.com/adelevie)) created [rea
 
 ## Random Tweet {#random-tweet}
 
-<div><blockquote class="twitter-tweet" lang="en"><p>Recent changes: web ui is being upgraded to [#reactjs](https://twitter.com/search?q=%23reactjs&src=hash), HEAD~4 at [https://camlistore.googlesource.com/camlistore/](https://camlistore.googlesource.com/camlistore/)</p>&mdash; Camlistore (@Camlistore) <a href="https://twitter.com/Camlistore/status/423925795820539904">January 16, 2014</a></blockquote></div>
+https://twitter.com/Camlistore/status/423925795820539904

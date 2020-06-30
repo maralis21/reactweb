@@ -10,7 +10,7 @@ This round-up is a special edition on [Flux](https://facebook.github.io/flux/). 
 
 Facebook engineers [Jing Chen](https://github.com/jingc) and [Bill Fisher](https://github.com/fisherwebdev) gave a talk about Flux and React at [ForwardJS](http://forwardjs.com/), and how using an application architecture with a unidirectional data flow helped solve recurring bugs.
 
-<iframe width="650" height="315" src="//www.youtube-nocookie.com/embed/i__969noyAM" frameborder="0" allowfullscreen></iframe>
+https://youtu.be/i__969noyAM
 
 # Yahoo {#yahoo}
 
@@ -102,7 +102,7 @@ undo: function() {
 
 [Dan Abramov](https://twitter.com/dan_abramov) working at Stampsy made a talk about React and Flux. It's a very good overview of the concepts at play.
 
-<iframe src="//slides.com/danabramov/components-react-flux-wip/embed"  width="100%" height="315" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+https://slides.com/danabramov/components-react-flux-wip
 
 
 ## React and Flux {#react-and-flux}
@@ -143,9 +143,9 @@ undo: function() {
 
 Last but not least, Flux and React ideas are not limited to JavaScript inside of the browser. The iOS team at Facebook re-implemented Newsfeed using very similar patterns.
 
-<iframe width="650" height="315" src="//www.youtube-nocookie.com/embed/XhXC4SKOGfQ" frameborder="0" allowfullscreen></iframe>
+https://youtu.be/XhXC4SKOGfQ
 
 
 ## Random Tweet {#random-tweet}
 
-<blockquote class="twitter-tweet" lang="en"><p>If you build your app with flux, you can swap out React for a canvas or svg view layer and keep 85% of your code. (or the thing after React)</p>&mdash; Ryan Florence (@ryanflorence) <a href="https://twitter.com/ryanflorence/status/507309645372076034">September 3, 2014</a></blockquote>
+https://twitter.com/ryanflorence/status/507309645372076034

@@ -28,8 +28,6 @@ We've also reached a point where there are too many questions for us to handle d
 
 While this is not going to work for all the attributes since they are camelCased in React, this is a pretty cool trick.
 
-<div style="margin-left: 74px;"><blockquote class="twitter-tweet"><p>Turn any DOM element into a React.js function: JSXTransformer.transform(&quot;/** <a href="https://twitter.com/jsx">@jsx</a> React.DOM */&quot; + element.innerHTML).code</p>&mdash; Ross Allen (@ssorallen) <a href="https://twitter.com/ssorallen/statuses/377105575441489920">September 9, 2013</a></blockquote></div>
-
 ## Remarkable React {#remarkable-react}
 
 [Stoyan Stefanov](http://www.phpied.com/) gave a talk at [BrazilJS](http://braziljs.com.br/) about React and wrote an article with the content of the presentation. He goes through the difficulties of writing _active apps_ using the DOM API and shows how React handles it.

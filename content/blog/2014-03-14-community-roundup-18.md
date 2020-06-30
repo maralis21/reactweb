@@ -75,7 +75,7 @@ Ian Bicking ([@ianbicking](https://twitter.com/ianbicking)) of Mozilla Labs [exp
 
 React was also recently mentioned at ng-conf, where the Angular team commented on React's concept of the virtual DOM:
 
-<iframe width="650" height="315" src="//www.youtube-nocookie.com/embed/srt3OBP2kGc?start=113" frameborder="0" allowfullscreen></iframe>
+https://youtu.be/srt3OBP2kGc?start=113
 
 ## React and Web Components {#react-and-web-components}
 
@@ -102,4 +102,4 @@ Speaking of Om: [Omchaya](https://github.com/sgrove/omchaya) by Sean Grove ([@sg
 
 ## Random Tweets {#random-tweets}
 
-<div><blockquote class="twitter-tweet" lang="en"><p>Worked for 2 hours on a [@react_js](https://twitter.com/react_js) app sans internet. Love that I could get stuff done with it without googling every question.</p>&mdash; John Shimek (@varikin) <a href="https://twitter.com/varikin/status/436606891657949185">February 20, 2014</a></blockquote></div>
+https://twitter.com/varikin/status/436606891657949185

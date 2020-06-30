@@ -9,8 +9,7 @@ This round-up is the proof that React has taken off from its Facebook's root: it
 
 [Steve Luscher](https://github.com/steveluscher) working at [LeanPub](https://leanpub.com/) made a 30 min talk at [Super VanJS](https://twitter.com/vanjs). He does a remarkable job at explaining why React is so fast with very exciting demos using the HTML5 Audio API.
 
-<figure><iframe width="650" height="338" src="//www.youtube-nocookie.com/embed/1OeXsL5mr4g" frameborder="0" allowfullscreen></iframe></figure>
-
+https://youtu.be/1OeXsL5mr4g
 
 ## React Tips {#react-tips}
 
@@ -88,4 +87,5 @@ This round-up is the proof that React has taken off from its Facebook's root: it
 ## Random Tweet {#random-tweet}
 
 <img src="../images/blog/steve_reverse.gif" style="float: right;" />
-<div style="width: 320px;"><blockquote class="twitter-tweet"><p>I think this reversed gif of Steve Urkel best describes my changing emotions towards the React Lib <a href="http://t.co/JoX0XqSXX3">http://t.co/JoX0XqSXX3</a></p>&mdash; Ryan Seddon (@ryanseddon) <a href="https://twitter.com/ryanseddon/statuses/398572848802852864">November 7, 2013</a></blockquote></div>
+
+https://twitter.com/ryanseddon/statuses/398572848802852864
