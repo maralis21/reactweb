@@ -221,7 +221,11 @@ const Header = ({location}: {location: Location}) => (
                 borderRadius: 15,
               },
             }}
-            to="/languages">
+            to="/languages"
+            state={{
+              previousPath:
+                typeof window !== 'undefined' ? window.location.pathname : '/',
+            }}>
             <LanguagesIcon />{' '}
             <span
               css={{
