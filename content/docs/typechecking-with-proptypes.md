@@ -36,7 +36,7 @@ In this example, we are using a class component, but the same functionality coul
 
 ### PropTypes {#proptypes}
 
-Here is an example documenting the different validators provided:
+Here is an example of documenting the different validators provided:
 
 ```javascript
 import PropTypes from 'prop-types';
