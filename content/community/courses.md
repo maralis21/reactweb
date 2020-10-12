@@ -51,3 +51,5 @@ permalink: community/courses.html
 - [React Tutorial](https://react-tutorial.app) - Learn React step by step in an interactive environment with flashcards.
 
 - [Road to React](https://www.roadtoreact.com/) - Your journey to master React in JavaScript.
+
+- [Become a React Developer](https://www.alterclass.io/courses/react) - Master React and build real-world applications. Go beyond the fundamentals.
