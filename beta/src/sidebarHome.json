@@ -15,8 +15,8 @@
           "title": "Community",
           "path": "/community",
           "routes": [{
-            "title": "Acknowledgements",
-            "path": "/community/acknowledgements"
+            "title": "Acknowledgments",
+            "path": "/community/acknowledgments"
           }, {
             "title": "Meet the Team",
             "path": "/community/meet-the-team"
