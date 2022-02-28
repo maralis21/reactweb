@@ -4,7 +4,6 @@
 
 // @ts-ignore
 import {MDXContext} from '@mdx-js/react';
-import recentPostsRouteTree from 'blogIndexRecent.json';
 import {DocsPageFooter} from 'components/DocsFooter';
 import {ExternalLink} from 'components/ExternalLink';
 import {MDXComponents} from 'components/MDX/MDXComponents';
@@ -15,9 +14,9 @@ import {useRouter} from 'next/router';
 import * as React from 'react';
 import {getAuthor} from 'utils/getAuthor';
 import toCommaSeparatedList from 'utils/toCommaSeparatedList';
-import {Page} from './Page';
 import {RouteItem, useRouteMeta} from './useRouteMeta';
 import {useTwitter} from './useTwitter';
+import {LayoutBlog} from './LayoutBlog';
 
 interface PageFrontmatter {
   id?: string;
@@ -67,23 +66,24 @@ function LayoutPost({meta, children}: LayoutPostProps) {
   useTwitter();
   return (
     <>
-      <div className="w-full px-12">
+      <div className="w-full lg:pt-8 px-5 sm:px-12">
         <div className="h-full mx-auto max-w-4xl relative pt-16 w-full overflow-x-hidden">
           <Seo title={meta.title} />
-          <h1 className="mb-6 pt-8 text-4xl md:text-5xl font-bold leading-snug tracking-tight text-primary dark:text-primary-dark">
+          <h1 className="mb-6 pt-8 text-4xl md:text-5xl font-bold leading-snug tracking-tight dark:text-primary-dark">
             {meta.title}
           </h1>
           <p className="mb-6 text-lgtext-secondary dark:text-secondary-dark">
             By{' '}
             {toCommaSeparatedList(meta.author, (author) => (
               <ExternalLink
+                key={author}
                 href={getAuthor(author).url}
                 className="text-link dark:text-link-dark underline font-bold">
                 {getAuthor(author).name}
               </ExternalLink>
             ))}
             <span className="mx-2">·</span>
-            <span className="lead inline-flex text-gray-50">
+            <span className="lead inline-flex text-gray-50 dark:text-gray-20">
               <time dateTime={dateTime}>{date}</time>
             </span>
           </p>
@@ -106,7 +106,7 @@ function LayoutPost({meta, children}: LayoutPostProps) {
 }
 
 function AppShell(props: {children: React.ReactNode}) {
-  return <Page routeTree={recentPostsRouteTree as RouteItem} {...props} />;
+  return <LayoutBlog {...props} />;
 }
 
 export default function withLayoutPost(meta: any) {
