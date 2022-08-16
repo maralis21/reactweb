@@ -16,6 +16,8 @@ import {version} from 'site-constants';
 import ExternalLinkSvg from 'templates/components/ExternalLinkSvg';
 import DocSearch from './DocSearch';
 
+import Toggler from './toggler';
+
 // $FlowFixMe
 import navHeader from '../../../content/headerNav.yml';
 
@@ -171,6 +173,7 @@ const Header = ({location}: {location: Location}) => (
             //width: 'calc(100% / 4)',
             //},
           }}>
+          <Toggler />
           <Link
             css={{
               padding: '5px 10px',
