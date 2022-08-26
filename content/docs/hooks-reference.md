@@ -201,7 +201,7 @@ The array of dependencies is not passed as arguments to the effect function. Con
 const value = useContext(MyContext);
 ```
 
-Accepts a context object (the value returned from `React.createContext`) and returns the current context value for that context. The current context value is determined by the `value` prop of the nearest `<MyContext.Provider>` above the calling component in the tree.
+Accepts a [context](/docs/context.html) object (the value returned from [`React.createContext`](/docs/context.html#reactcreatecontext)) and returns the current context value for that context. The current context value is determined by the `value` prop of the nearest [`<MyContext.Provider>`](/docs/context.html#contextprovider) above the calling component in the tree.
 
 When the nearest `<MyContext.Provider>` above the component updates, this Hook will trigger a rerender with the latest context `value` passed to that `MyContext` provider. Even if an ancestor uses [`React.memo`](/docs/react-api.html#reactmemo) or [`shouldComponentUpdate`](/docs/react-component.html#shouldcomponentupdate), a rerender will still happen starting at the component itself using `useContext`.
 
