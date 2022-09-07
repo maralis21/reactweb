@@ -399,7 +399,7 @@ The merging is shallow, so `this.setState({comments})` leaves `this.state.posts`
 
 ## The Data Flows Down {#the-data-flows-down}
 
-Neither parent nor child components can know if a certain component is stateful or stateless, and they shouldn't care whether it is defined as a function or a class.
+Neither parent nor child components can know if a certain component is [stateful or stateless](https://stackoverflow.com/questions/34512696/reactjs-difference-between-stateful-and-stateless), and they shouldn't care whether it is defined as a function or a class.
 
 This is why state is often called local or encapsulated. It is not accessible to any component other than the one that owns and sets it.
 
@@ -441,4 +441,4 @@ function App() {
 
 Each `Clock` sets up its own timer and updates independently.
 
-In React apps, whether a component is stateful or stateless is considered an implementation detail of the component that may change over time. You can use stateless components inside stateful components, and vice versa.
+In React apps, whether a component is [stateful or stateless](https://stackoverflow.com/questions/34512696/reactjs-difference-between-stateful-and-stateless) is considered an implementation detail of the component that may change over time. You can use stateless components inside stateful components, and vice versa.
