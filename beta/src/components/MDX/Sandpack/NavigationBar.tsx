@@ -6,12 +6,14 @@ import * as React from 'react';
 import cn from 'classnames';
 import {
   FileTabs,
+  useActiveCode,
   useSandpack,
   useSandpackNavigation,
 } from '@codesandbox/sandpack-react';
 import {OpenInCodeSandboxButton} from './OpenInCodeSandboxButton';
 import {ResetButton} from './ResetButton';
 import {DownloadButton} from './DownloadButton';
+import {CopyButton} from './CopyButton';
 import {IconChevron} from '../../Icon/IconChevron';
 import {Listbox} from '@headlessui/react';
 
@@ -35,6 +37,7 @@ const getFileName = (filePath: string): string => {
 
 export function NavigationBar({providedFiles}: {providedFiles: Array<string>}) {
   const {sandpack} = useSandpack();
+  const {code} = useActiveCode();
   const containerRef = React.useRef<HTMLDivElement | null>(null);
   const tabsRef = React.useRef<HTMLDivElement | null>(null);
   // By default, show the dropdown because all tabs may not fit.
@@ -165,6 +168,7 @@ export function NavigationBar({providedFiles}: {providedFiles: Array<string>}) {
       <div
         className="px-3 flex items-center justify-end text-right"
         translate="yes">
+        <CopyButton text={code} />
         <DownloadButton providedFiles={providedFiles} />
         <ResetButton onReset={handleReset} />
         <OpenInCodeSandboxButton />
