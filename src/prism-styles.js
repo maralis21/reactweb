@@ -9,25 +9,27 @@ import {css} from 'glamor';
 import {colors} from 'theme';
 
 const prismColors = {
+  background: '#282c33',
   char: '#D8DEE9',
-  comment: '#B2B2B2',
-  keyword: '#c5a5c5',
-  lineHighlight: '#353b45', // colors.dark + extra lightness
-  primitive: '#5a9bcf',
-  string: '#8dc891',
-  variable: '#d7deea',
-  boolean: '#ff8b50',
-  punctuation: '#88C6BE',
-  tag: '#fc929e',
-  function: '#79b6f2',
-  className: '#FAC863',
+  comment: '#92a4b0',
+  keyword: '#dfa9f9',
+  lineHighlight: '#383d47',
+  primitive: '#ff8d5b',
+  string: '#ffd48f',
+  variable: '#eaf0fb',
+  boolean: '#ff7c8b',
+  punctuation: '#90deff',
+  tag: '#3ce6da',
+  tagClass: '#fc9464',
+  function: '#80b6ff',
+  className: '#ffdb7f',
+  attrName: '#d6f78f',
   method: '#6699CC',
-  operator: '#fc929e',
 };
 
 css.global('.gatsby-highlight', {
-  background: colors.dark,
-  color: colors.white,
+  background: prismColors.background,
+  color: prismColors.variable,
   borderRadius: 10,
   overflow: 'auto',
   tabSize: '1.5em',
@@ -61,7 +63,7 @@ css.global('.gatsby-highlight-code-line', {
 });
 
 css.global('.token.attr-name', {
-  color: prismColors.keyword,
+  color: prismColors.attrName,
 });
 
 css.global(
@@ -101,9 +103,14 @@ css.global(`.token.string`, {
   color: prismColors.string,
 });
 
-css.global(`.token.punctuation`, {
-  color: prismColors.punctuation,
-});
+css.global(
+  `
+  .token.punctuation,
+  .token.operator`,
+  {
+    color: prismColors.punctuation,
+  },
+);
 
 css.global(
   `
@@ -122,7 +129,6 @@ css.global(`.token.function`, {
 
 css.global(
   `
-.token.operator,
 .token.entity,
 .token.url,
 .token.variable`,
@@ -137,6 +143,10 @@ css.global('.token.attr-value', {
 
 css.global('.token.keyword', {
   color: prismColors.keyword,
+});
+
+css.global('.token.tag.class-name', {
+  color: prismColors.tagClass,
 });
 
 css.global(
@@ -165,4 +175,8 @@ css.global('.token.entity', {
 
 css.global('.namespace', {
   opacity: 0.7,
+});
+
+css.global('.token.language-javascript', {
+  color: prismColors.variable,
 });
