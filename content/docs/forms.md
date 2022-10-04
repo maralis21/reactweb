@@ -176,6 +176,33 @@ class FlavorForm extends React.Component {
 
 Overall, this makes it so that `<input type="text">`, `<textarea>`, and `<select>` all work very similarly - they all accept a `value` attribute that you can use to implement a controlled component.
 
+
+### Handling multiple options with `<select>`
+
+It is also possible to select multiple options within a `<select>` tag, by enabling the `multiple` attribute and passing an array into the `value` attribute. This array should contain the corresponding `value` attributes of the `<option>` tags inside the `<select>` tag.
+
+The `handleChange` method from the above example would then change to get the selected values from `event.target.selectedOptions`.
+
+```javascript{2}
+handleChange(event) {
+  const selectedFlavors = Array.from(event.target.selectedOptions).map(option => option.value);
+  this.setState({value: selectedFlavors});
+}
+```
+
+The `<select>` inside the render would also change to pass an array to the `value` attribute:
+
+```html
+<select value={this.state.value} onChange={this.handleChange} multiple={true}>
+  <option value="grapefruit">Grapefruit</option>
+  <option value="lime">Lime</option>
+  <option value="coconut">Coconut</option>
+  <option value="mango">Mango</option>
+</select>
+```
+
+[Try it on CodePen.](https://codepen.io/nupgrover/pen/RxeqLQ?editors=0010)
+
 > Note
 >
 > You can pass an array into the `value` attribute, allowing you to select multiple options in a `select` tag:
