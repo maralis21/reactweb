@@ -28,6 +28,7 @@ permalink: community/courses.html
 
 
 ## Paid Courses {#paid-courses}
+- [Introduction To React](https://keyholesoftware.com/learningservices/courses/react-course/) - Online class with live instructor explaining React fundamentals and hands-on development of your own React app.
 
 - [Meta Front-End Developer Professional Certificate](https://www.coursera.org/professional-certificates/meta-front-end-developer) - Launch your career as a front-end developer. Build job-ready skills for an in-demand career and earn a credential from Meta. No degree or prior experience required to get started.
 
