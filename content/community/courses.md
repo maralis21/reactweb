@@ -57,4 +57,7 @@ permalink: community/courses.html
 
 - [Road to React](https://www.roadtoreact.com/) - Your journey to master React in JavaScript.
 
+- [React for Intermediates](https://web-development-pro.thinkific.com/) - Advanced Concepts in Software Development with React, Render Anti-Patterns, Best Practices, Hooks.
+
 - [Epic React](https://epicreact.dev/) - Confidently Ship Well-Architected Production Ready React Apps Like a Pro
+
