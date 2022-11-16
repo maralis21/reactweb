@@ -88,7 +88,7 @@ const element = <a href="https://www.reactjs.org"> link </a>;
 You may also use curly braces to embed a JavaScript expression in an attribute:
 
 ```js
-const element = <img src={user.avatarUrl}></img>;
+const element = <img src={user.avatarUrl} alt=''></img>;
 ```
 
 Don't put quotes around curly braces when embedding a JavaScript expression in an attribute. You should either use quotes (for string values) or curly braces (for expressions), but not both in the same attribute.
@@ -104,7 +104,7 @@ Don't put quotes around curly braces when embedding a JavaScript expression in a
 If a tag is empty, you may close it immediately with `/>`, like XML:
 
 ```js
-const element = <img src={user.avatarUrl} />;
+const element = <img src={user.avatarUrl} alt=''/>;
 ```
 
 JSX tags may contain children:
