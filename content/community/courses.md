@@ -55,6 +55,8 @@ permalink: community/courses.html
 
 - [React Tutorial](https://react-tutorial.app) - Learn React step by step in an interactive environment with flashcards.
 
+- [Acade Mind](https://www.udemy.com/course/react-the-complete-guide-incl-redux/) - React - The Complete Guide (incl Hooks, React Router, Redux).
+
 - [Road to React](https://www.roadtoreact.com/) - Your journey to master React in JavaScript.
 
 - [Epic React](https://epicreact.dev/) - Confidently Ship Well-Architected Production Ready React Apps Like a Pro
