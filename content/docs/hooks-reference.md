@@ -119,7 +119,7 @@ In the rare case that you need to force the DOM update to be applied synchronous
 ### `useEffect` {#useeffect}
 
 ```js
-useEffect(didUpdate);
+useEffect(didUpdate, [deps]);
 ```
 
 Accepts a function that contains imperative, possibly effectful code.
@@ -492,7 +492,7 @@ Prefer the standard `useEffect` when possible to avoid blocking visual updates.
 ### `useDebugValue` {#usedebugvalue}
 
 ```js
-useDebugValue(value)
+useDebugValue(value, [format])
 ```
 
 `useDebugValue` can be used to display a label for custom hooks in React DevTools.
