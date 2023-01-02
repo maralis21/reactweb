@@ -93,7 +93,9 @@ If your update function returns the exact same value as the current state, the s
 
 #### Lazy initial state {#lazy-initial-state}
 
-The `initialState` argument is the state used during the initial render. In subsequent renders, it is disregarded. If the initial state is the result of an expensive computation, you may provide a function instead, which will be executed only on the initial render:
+The `initialState` argument is the state used during the initial render. In subsequent renders, it is disregarded. This mean that if you are using a function to compute this initial state, the function will be invoked, but the return content will be ignored. This leads to unnecessary computation, which in some circumstances can cause performances issues.
+
+If the initial state is the result of an expensive computation, you may provide a function instead, which will be executed only on the initial render:
 
 ```js
 const [state, setState] = useState(() => {
