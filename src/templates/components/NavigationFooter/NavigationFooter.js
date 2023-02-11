@@ -4,6 +4,7 @@
  * @emails react-core
  */
 
+import ArrowSvg from '../ArrowSvg';
 import Container from 'components/Container';
 import Flex from 'components/Flex';
 import {Link} from 'gatsby';
@@ -46,6 +47,9 @@ const NavigationFooter = ({next, prev, location}) => {
                     paddingTop: 10,
                   }}>
                   <PrimaryLink location={location} to={`${prev.id}.html`}>
+                    <ArrowSvg
+                      cssProps={{marginRight: 10, transform: 'rotateY(180deg)'}}
+                    />
                     {prev.title}
                   </PrimaryLink>
                 </div>
@@ -68,6 +72,7 @@ const NavigationFooter = ({next, prev, location}) => {
                   }}>
                   <PrimaryLink location={location} to={`${next.id}.html`}>
                     {next.title}
+                    <ArrowSvg cssProps={{marginLeft: 10}} />
                   </PrimaryLink>
                 </div>
               </div>
