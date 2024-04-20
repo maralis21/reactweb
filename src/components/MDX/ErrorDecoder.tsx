@@ -101,7 +101,7 @@ export default function ErrorDecoder() {
         'block bg-red-100 text-red-600 py-4 px-6 mt-5 rounded-lg',
         isReady ? 'opacity-100' : 'opacity-0'
       )}>
-      <b>{message}</b>
+      <pre className="font-bold whitespace-pre-wrap">{message}</pre>
     </code>
   );
 }
